@@ -18,11 +18,11 @@ cur.execute("""INSERT INTO UserTable
 cur.execute("""INSERT INTO CreditTable
             (grade,semester,credit)
             VALUES (3, 'F', 114)""") 
-'''
 
 cur.execute("""INSERT INTO SubjectTable
             (subjectname,type,credit,grade)
             VALUES ('PBL', 'required', 2, 3)""")    
+'''
 
 con.commit()
 

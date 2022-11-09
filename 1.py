@@ -4,7 +4,7 @@ def connect():
     con = MySQLdb.connect(
         host = "localhost",
         user = "root",
-        password = "toaruKAGAKU",
+        password = "",
         db = "test",
         use_unicode = True,
         charset = "utf8")
@@ -14,17 +14,19 @@ con = connect()
 
 cur = con.cursor()
 
-'''
+
 cur.execute("""
             CREATE TABLE test.UserTable
             (id MEDIUMINT NOT NULL AUTO_INCREMENT,
+            name VARCHAR(100),
+            email VARCHAR(100),
             DateofBirth VARCHAR(30),
             sex CHAR(1),
             password VARCHAR(30),
             PRIMARY KEY(id))
             """)        
 
-
+'''
 cur.execute("""
             CREATE TABLE test.CreditTable
             (id MEDIUMINT NOT NULL AUTO_INCREMENT,
