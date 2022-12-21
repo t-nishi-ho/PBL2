@@ -7,5 +7,6 @@
         <tr><td align="right">生年月日</td><td><input type="DateofBirth" name="DateofBirth" required></td></tr>
         <tr><td align="right">パスワード</td><td><input type="password" name="passwd" required></td></tr>
         <tr><td colspan="2" align="right"><input type="submit" value="作成"></td></tr>
+        <input type="hidden" name="home" value="{{ token | safe }}">
     </form>
 </table>

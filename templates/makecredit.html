@@ -1,0 +1,11 @@
+{{ msg|safe }}
+<a href="admin">ホーム画面へ</a>
+<table align = "center">
+    <form method="POST" action = "makecredit">
+        <tr><td align="right">学年</td><td><input type="grade" name="grade" required></td></tr>
+        <tr><td align="right">学期</td><td><input type="credit" name="semester" required></td></tr>
+        <tr><td align="right">合計取得単位</td><td><input type="credit" name="credit" required></td></tr>
+        <tr><td colspan="2" align="right"><input type="submit" value="登録"></td></tr>
+        <input type="hidden" name="home" value="{{ token | safe }}">
+    </form>
+</table>

@@ -1,0 +1,13 @@
+{{ msg|safe }}
+<a href="admin">ホーム画面へ</a>
+<table align = "center">
+    <form method="POST" action = "makesubject">
+        <tr><td align="right">科目名</td><td><input type="subjectname" name="subjectname" required></td></tr>
+        <tr><td align="right">科目グループ名</td><td><input type="type" name="type" required></td></tr>
+        <tr><td align="right">単位数</td><td><input type="credit" name="credit" required></td></tr>
+        <tr><td align="right">所得学年</td><td><input type="grade" name="grade" required></td></tr>
+        <tr><td align="right">学期</td><td><input type="semester" name="semester" required></td></tr>
+        <tr><td colspan="2" align="right"><input type="submit" value="登録"></td></tr>
+        <input type="hidden" name="home" value="{{ token | safe }}">
+    </form>
+</table>
