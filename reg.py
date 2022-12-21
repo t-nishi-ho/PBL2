@@ -13,7 +13,7 @@ def connect():
     con = MySQLdb.connect(
         host = "localhost",
         user = "root",
-        password = "toaruKAGAKU",
+        password = "",
         db = "test",
         use_unicode = True,
         charset = "utf8")
